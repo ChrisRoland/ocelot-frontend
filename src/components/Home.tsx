@@ -10,7 +10,7 @@ const Home: React.FC= () => {
  
 	return (
 		<div>
-			<section className='bg-black flex justify-start items-center custom-container'>
+			<section className='bg-black flex justify-start items-center pl-20 pr-20 lg:pl-50 lg:pr-50'>
 				<motion.div 
 					initial={{ opacity: 0 , y : 50}}
 					animate={{ opacity: 1, y: 0 }}
@@ -34,16 +34,16 @@ const Home: React.FC= () => {
 			</section>
 
 			{/* <SpinningBackground /> */}
-			<section  className='flex justify-center items-center  pl-50 pr-50 '>
+			<section  className='flex justify-center items-center  pl-20 pr-20 lg:pl-50 lg:pr-50'>
 				<div className='p-10'>
 
 					<p className='text-7xl'>You dream, we build</p>
 
-					<div className='grid grid-cols-7 gap-10'>
-						<div className='h-full col-span-3'>
-							<img className='' src="https://ocelotgroup.org/_next/static/media/1537.a3a7716b.jpg" alt="" />
+					<div className='grid md:grid-cols-1 lg:grid-cols-7 gap-10 mt-5'>
+						<div className='h-full w-130 lg:w-full lg:col-span-3'>
+							<img className='rounded-2xl' src="https://ocelotgroup.org/_next/static/media/1537.a3a7716b.jpg" alt="" />
 						</div>
-						<div className='col-span-4' >
+						<div className='lg:col-span-4' >
 
 							<div>
 								<div>
@@ -92,7 +92,7 @@ const Home: React.FC= () => {
 			</section>
 
 
-			<section className='bg-black w-full text-white  pl-50 pr-50 '>
+			<section className='bg-black w-full text-white  pl-20 pr-20 lg:pl-50 lg:pr-50 '>
 				<div className='p-10'>
 					<div className='flex gap-2 items-center'>
 						<span>
@@ -102,7 +102,7 @@ const Home: React.FC= () => {
 						<span>Our four step approach</span>
 					</div>
 
-					<div className='grid grid-cols-2 gap-x-5 gap-y-10 mt-10'>
+					<div className='grid md:grid-cols-2 gap-x-5 gap-y-10 mt-10'>
 
 						
 							{steps.map(step => (
@@ -130,10 +130,12 @@ const Home: React.FC= () => {
 								
 							))}
 
-					<div className='col-span-2'>
-						<img className='w-full' src="https://ocelotgroup.org/_next/static/media/planning.1b97172c.jpg" alt="" />
+					
+
 					</div>
 
+					<div className='mt-10 w-[120] lg:w-full'>
+						<img className='w-full rounded-2xl' src="https://ocelotgroup.org/_next/static/media/planning.1b97172c.jpg" alt="" />
 					</div>
 
 
