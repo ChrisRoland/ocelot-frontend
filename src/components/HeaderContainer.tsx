@@ -9,9 +9,12 @@ const HeaderContainer = ({title, description}: { title: string, description: str
 				initial={{ opacity: 0 , y : 50}}
 				animate={{ opacity: 1, y: 0 }}
 				transition={{ duration: 0.8, ease: "easeOut" }} 
-				className='mt-20 mb-40'>
-				<h2 className='text-white text-5xl'>{title}</h2>
-				<p className='text-white text-2xl max-w-400'>{description}</p>
+				className='mt-20 mb-40 w-full'>
+				<h2 className='text-white text-[30px] lg:text-[70px] font-bold font-primary '>{title}</h2>
+				<div>
+
+					<p className='text-neutral-200 leading-5 font-normal tracking-tight text-[15px] max-w-[400px]'>{description}</p>
+				</div>
 
 			</motion.div>
 		</section>

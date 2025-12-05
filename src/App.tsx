@@ -10,6 +10,7 @@ import Project from './components/Project';
 import Contact from './components/Contact';
 import Service from './components/Service';
 import Navbar from './components/Navbar';
+import ScrollToTopButton from "./components/ScrollToTopButton";
 
 function App() {
 
@@ -27,6 +28,8 @@ function App() {
 				<Route path="/contact" element={<Contact />} />
 			</Routes>
 			</div>
+
+			<ScrollToTopButton />
 			
 				
 		</BrowserRouter>

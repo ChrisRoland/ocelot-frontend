@@ -1,6 +1,46 @@
 @import "tailwindcss";
 
+* {
+	box-sizing: border-box;
+}
 
+
+
+@font-face{
+  font-family: "Clash Display";
+  src: url("/src/assets/fonts/ClashDisplay/ClashDisplay-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+.text-primary-main
+{
+    color: rgb(107 181 212 / 1);
+}
+
+.btn-blue {
+    background-color:  rgb(107 181 212 / 1);
+}
+
+.btn-blue:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+.contact:hover .icon-translate {
+    transform: translateX(-5px);
+}
+.contact {
+  margin-inline: auto;
+}
+
+.icon-translate {
+    transition: transform 0.3s ease;
+}
+
+.font-secondary {
+    font-family: Inter, Sans-Serif;
+}
 
 .main-gradient {
   background: -webkit-linear-gradient(45deg, #74c7e8 .84%, #6bb5d4 47.7%, #030c49 96.55%);
@@ -13,11 +53,17 @@
 }
 
 .font-primary {
-    font-family: Clash Display, Inter, Sans-Serif;
+    font-family: "Clash Display", Inter, Sans-Serif;
 }
 
 .font-secondary{
     font-family: Inter, Sans-Serif;
+}
+
+.custom-bold-font {
+  font-weight: 900;
+  font-size: x-large;
+  line-height: 3rem;
 }
 
 .animate-float_x{
@@ -28,15 +74,40 @@
     display: block;
     appearance: none;
     border-radius: 0.5rem;
-    --tw-bg-opacity: 1;
-    background-color: rgb(17 18 18 / var(--tw-bg-opacity, 1));
+    background-color: rgb(17 18 18 / 1);
     padding-left: .875rem;
     padding-right: .875rem;
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+    color: rgb(255 255 255 / 1);
+    outline: none
 }
 
+
+
+
+/* Extra small devices (phones, 600px and down) */
+
 .custom-container {
-  padding-left: 200px;
-  padding-right: 200px;
+	padding-left: 1.6rem;
+	padding-right: 1.6rem;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (min-width: 610px) {
+	.custom-container {
+		padding-left: 19rem;
+		padding-right: 19rem;
+	}
+}
+
+
+
+/* @keyframes float {
+  from {top: 0px;}
+  50%  {background: blue !important;} /* ignored */
+  /* to   {top: 200px;} */
+/* } */ 
+
+.animate-float
+{
+    animation: float 2s linear infinite;
 }

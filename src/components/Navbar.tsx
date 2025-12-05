@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <>
       {/* NAVBAR (always visible) */}
-      <div className="fixed top-0 left-0 z-30 flex items-center justify-between h-20 bg-black px-6 w-full">
+      <div className="fixed top-0 left-0 z-50 flex items-center justify-between h-20 bg-black px-6 w-full custom-container">
         <Link to="/">
           <img
             src="https://ocelotgroup.org/_next/static/media/ocelot_logo.ca0992e6.png"

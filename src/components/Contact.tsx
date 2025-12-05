@@ -7,52 +7,54 @@ const Contact = () => {
     <div>
         <HeaderContainer 
             title="Get In touch with us"
-            description="Explore our portfolio of innovative solutions and breakthrough technologies.
-                From fintech platforms to e-commerce applications,
-                discover how we transform bold ideas into market-ready innovations."
+            description="Should you have any inquiries, don't hesitate to contact us, and we'll get back
+             to you promptly. Make sure to include as much detail as you can."
         />
 
-        <div className='grid grid-cols-3 gap-3 bg-black text-white'>
-            <div className='col-span-2'>
-                <div>
-                    <div className='grid grid-cols-2 gap-3'>
+        <div className='grid md:grid-cols-3 gap-3 bg-black text-white custom-container text-[10px]'>
+            <div className='md:col-span-2'>
+                <div className='flex flex-col gap-2'>
+                    <div className='grid md:grid-cols-2 gap-3'>
                         
                         <div  className='flex flex-col'>
-                            <label htmlFor="">First Name</label>
-                            <input className="input h-20" type="text" />
+                            <label htmlFor="" className=''>First Name</label>
+                            <input className="input h-10" type="text" />
                         </div>
 
                         <div className='flex flex-col'>
-                            <label htmlFor=""> Last Name </label>
-                            <input type="text" className='h-20 w-full bg-neutral-800' />
+                            <label htmlFor="" className=''> Last Name </label>
+                            <input type="text" className='h-10 input outline-none' />
                         </div>
 
                     </div> 
                     
                     <div  className='flex flex-col'>
-                        <label htmlFor="">How may we help you?</label>
-                        <input type="text" />
+                        <label htmlFor="" className=''>How may we help you?</label>
+                        <input type="text" className='h-10 input outline-none'/>
                     </div>
 
                     <div className='flex flex-col'>
-                        <label htmlFor=""> Description</label>
+                        <label htmlFor="" className=''> Description</label>
                         <textarea  name="" id="" rows="4" cols="50"></textarea>
                     </div>
 
 
-                    <button className='p-4 rounded-lg bg-blue-300 text-white'>Send Message</button>
+                    <button className='p-2 rounded-lg btn-blue w-[150px] text-[9px]'>Send Message</button>
 
                 </div>
 
             </div>
-            <div>
+
+            <div className='flex flex-col gap-3'>
                 <div>
-                    <h3> Office </h3>
-                    <p> No.6 Isheri street, ebute-meta lagos, nigeria </p>
+                    <h3 className='text-[13px] font-bold'> Office </h3>
+                    <p > No.6 Isheri street, ebute-meta lagos, nigeria </p>
                 </div>
                 <div>
-                    <h3> Contact </h3>
-                    <p> +234 802 810 8892 marketingocelot@gmail.com</p>
+                    <a href="https://ocelotgroup.org/tel:+2348028108892" className='cursor-pointer'>
+                        <h3 className='text-[13px] font-bold'> Contact </h3>
+                        <p> +234 802 810 8892 marketingocelot@gmail.com</p>
+                    </a>
                 </div>
             </div>
 
