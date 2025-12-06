@@ -211,7 +211,7 @@ const Home: React.FC = () => {
             ))}
           </div>
 
-          <div className="mt-10 w-[100] lg:w-full">
+          <div className="mt-10 w-full">
             <img
               className="w-full rounded-2xl"
               src="https://ocelotgroup.org/_next/static/media/planning.1b97172c.jpg"

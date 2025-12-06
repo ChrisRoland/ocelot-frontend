@@ -13,7 +13,7 @@ const About: React.FC = () => {
                 modelPath="/models/Parrot.glb"
             />
 
-        <div className='absolute top-160 md:top-140'>
+        <div className='absolute top-180 md:top-140'>
 
             <div className='flex justify-center items-center custom-container'>
                 <div>
