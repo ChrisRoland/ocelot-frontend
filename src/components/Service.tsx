@@ -6,13 +6,15 @@ import Footer from './Footer';
 
 const Service: React.FC = () => {
   return (
-    <div>
+    <div className="relative">
         <HeaderContainer
             title='Our Services'
             description='Product design & development (end-to-end), full-stack engineering with a balance of quality vs. speed, business strategy & operational consulting, real-time communication & adaptive iteration, and post-launch product support. Experience across fintech, health, advertising, logistics, on-demand services, and real estate.'
+            modelPath="/models/Horse.glb"
         />
 
-        <section className='custom-container'>
+        <div className='absolute top-160 md:top-140'>
+            <section className='custom-container '>
             <h1 className='font-primary font-extrabold text-[25px] w-40 md:w-full mt-10'>The Ocelot advantage</h1>
             <div className='grid md:grid-cols-3 gap-2 md:gap-5 mb-10'>
                 {/* {
@@ -106,6 +108,8 @@ const Service: React.FC = () => {
 
         <ContactUsInfo />
         <Footer />
+        </div>
+        
     </div>
   )
 }

@@ -11,19 +11,19 @@ const Home: React.FC = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-black relative w-full h-screen overflow-hidden">
+      <section className="bg-black relative w-full h-screen overflow-hidden  ">
         {/* Three.js Background */}
         <ThreeJSBackground />
 
-        {/* Hero Content - positioned but doesn't block canvas */}
+        {/* Hero Content */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.5, ease: "easeOut" }}
-          className="absolute top-1/2 left-6 lg:left-20 -translate-y-1/2 flex flex-col gap-5 p-10"
-          style={{ zIndex: 10, maxWidth: "calc(100% - 3rem)" }}
+          className="absolute top-80 md:top-1/2 left-6 lg:left-4   -translate-y-1/2 flex flex-col gap-5 p-10 custom-container"
+          style={{ zIndex: 8, maxWidth: "calc(100% - 3rem)" }}
         >
-          <h1 className="text-xl lg:text-[88px] leading-[92px] font-bold text-white font-primary">
+          <h1 className="text-xl lg:text-[42px] leading-[45px] font-bold text-white font-primary">
             Transforming bold ideas into{" "}
             <span className="main-gradient font-Montserrat">
               breakthrough solutions
@@ -73,7 +73,7 @@ const Home: React.FC = () => {
           </p>
 
           <div className="grid grid-cols-1 lg:grid-cols-7 gap-10 mt-5">
-            <div className="h-full w-100 lg:w-full lg:col-span-3">
+            <div className="h-full lg:w-full lg:col-span-3">
               <img
                 className="rounded-2xl"
                 src="https://ocelotgroup.org/_next/static/media/1537.a3a7716b.jpg"
