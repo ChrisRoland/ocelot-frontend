@@ -1,5 +1,5 @@
-import ProjectCard from "./ProjectCard";
-import { projectData } from "./Data/projectsData";
+// import ProjectCard from "./ProjectCard";
+// import { projectData } from "./Data/projectsData";
 
 
 
@@ -7,7 +7,7 @@ import { projectData } from "./Data/projectsData";
 const ProjectSection = () => {
   return (
     <section id="projects" className="app-container mt-14 768:mt-28">
-      <div className="relative h-full">
+      {/* <div className="relative h-full">
         {projectData.map((p, i) => (
           <ProjectCard key={i} 
             bg={p.title}             
@@ -20,7 +20,7 @@ const ProjectSection = () => {
           
           />
         ))}
-      </div>
+      </div> */}
     </section>
   );
 };

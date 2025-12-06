@@ -1,8 +1,6 @@
-import React from 'react'
 import HeaderContainer from './HeaderContainer'
 import Footer from './Footer';
 import { motion } from 'motion/react';
-import ProjectSection from './portfolioSection/ProjectSection'
 
 const Project = () => {
   return (

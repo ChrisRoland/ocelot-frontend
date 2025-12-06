@@ -139,11 +139,11 @@ const Home: React.FC = () => {
                       <span>Read More</span>
                       <span className="p-2 rounded-[50%] bg-gray-300 ">
                         <svg
-                          width="18"
-                          height="18"
-                          viewBox="0 0 18 18"
-                          fill="none"
-                          class="h-3.5 w-3.5 rotate-180"
+                          width={18}
+                          height={18}
+                          viewBox={`0 0 18 18`}
+                          fill={`none`}
+                          className="h-3.5 w-3.5 rotate-180"
                           xmlns="http://www.w3.org/2000/svg"
                         >
                           <path
@@ -169,12 +169,12 @@ const Home: React.FC = () => {
           <div className="flex gap-2 items-center">
             <span>
               <svg
-                width="14"
-                height="14"
-                viewBox="0 0 14 14"
-                fill="currentColor"
+                width={`14`}
+                height={`14`}
+                viewBox={`0 0 14 14`}
+                fill={`currentColor`}
                 xmlns="http://www.w3.org/2000/svg"
-                class="text-white"
+                className="text-white"
               >
                 <circle cx="7" cy="7" r="7" fill="currentColor"></circle>
               </svg>

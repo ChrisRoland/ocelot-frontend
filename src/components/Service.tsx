@@ -95,11 +95,11 @@ const Service: React.FC = () => {
 
             <div className='grid md:grid-cols-2 gap-5'>
                 <div className="w-full max-h-[300px]" >
-                    <img alt="market_image" fetchpriority="high"  decoding="async" data-nimg="1" className="object-cover w-full h-full rounded-2xl bg-neutral-100" src="https://ocelotgroup.org/_next/static/media/devcode.3bf0d105.jpg" style={{color: "transparent"}} />
+                    <img alt="market_image" fetchPriority="high"  decoding="async" data-nimg="1" className="object-cover w-full h-full rounded-2xl bg-neutral-100" src="https://ocelotgroup.org/_next/static/media/devcode.3bf0d105.jpg" style={{color: "transparent"}} />
                 </div>
                     
                 <div className="w-full max-h-[300px]" >
-                    <img alt="market_image" fetchpriority="high" decoding="async" data-nimg="1" className="object-cover w-full h-full rounded-2xl bg-neutral-100" src="https://ocelotgroup.org/_next/static/media/defemale.51e19d6b.jpg" style={{color: "transparent"}} />
+                    <img alt="market_image" fetchPriority="high" decoding="async" data-nimg="1" className="object-cover w-full h-full rounded-2xl bg-neutral-100" src="https://ocelotgroup.org/_next/static/media/defemale.51e19d6b.jpg" style={{color: "transparent"}} />
                 </div>
             </div>
 
