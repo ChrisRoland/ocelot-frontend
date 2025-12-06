@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -17,7 +17,7 @@ const Navbar = () => {
         </Link>
 
         {/* MOBILE ICON */}
-        <div className="lg:hidden">
+        <div className="lg:hidden z-100">
             {isNavOpen ? (
                 <button onClick={() => setIsNavOpen(false)}>
                 <svg

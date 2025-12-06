@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from "motion/react";
 
 const ContactUsInfo = () => {
@@ -19,7 +18,7 @@ const ContactUsInfo = () => {
 					<button className='flex gap-2 items-center contact mt-5  cursor-pointer'>
 						<span>Contact Us</span>
 						<span className='p-2 rounded-[50%] bg-gray-300 icon-translate'>
-							<svg width="18" height="18" viewBox="0 0 18 18" fill="none" class="h-3.5 w-3.5 rotate-180" xmlns="http://www.w3.org/2000/svg"><path d="M10.125 3.375L15.75 9M15.75 9L10.125 14.625M15.75 9H2.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>											
+							<svg width={18} height={18} viewBox="0 0 18 18" fill="none" className="h-3.5 w-3.5 rotate-180" xmlns="http://www.w3.org/2000/svg"><path d="M10.125 3.375L15.75 9M15.75 9L10.125 14.625M15.75 9H2.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>											
 						</span>
 					</button>
 
