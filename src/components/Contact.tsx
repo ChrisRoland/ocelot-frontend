@@ -1,4 +1,4 @@
-import React from 'react'
+
 import HeaderContainer from './HeaderContainer'
 import Footer from './Footer'
 
@@ -9,6 +9,7 @@ const Contact = () => {
             title="Get In touch with us"
             description="Should you have any inquiries, don't hesitate to contact us, and we'll get back
              to you promptly. Make sure to include as much detail as you can."
+            modelPath="/models/Parrot.glb"
         />
 
         <div className='grid md:grid-cols-3 gap-3 bg-black text-white custom-container text-[10px]'>
@@ -35,7 +36,7 @@ const Contact = () => {
 
                     <div className='flex flex-col'>
                         <label htmlFor="" className=''> Description</label>
-                        <textarea  name="" id="" rows="4" cols="50"></textarea>
+                        <textarea   rows={4} cols={50}></textarea>
                     </div>
 
 

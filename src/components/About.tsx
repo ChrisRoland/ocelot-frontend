@@ -3,7 +3,6 @@ import HeaderContainer from './HeaderContainer'
 import ContactUsInfo from './ContactUsInfo'
 import Footer from './Footer'
 import { approaches, teams } from '../utils'
-import { div } from 'motion/react-client'
 
 const About: React.FC = () => {
   return (

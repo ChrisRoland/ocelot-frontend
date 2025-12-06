@@ -4,7 +4,6 @@ import Footer from "./Footer";
 import ContactUsInfo from "./ContactUsInfo";
 import { steps } from "../utils";
 // import HeaderContainer from './HeaderContainer';
-// import SpinningBackground from './SpinningBackground';
 import { ThreeJSBackground } from "./ThreeJSBackground";
 
 const Home: React.FC = () => {
@@ -60,7 +59,6 @@ const Home: React.FC = () => {
         </motion.div>
       </section>
 
-      {/* <SpinningBackground /> */}
       <section className="flex justify-center items-center custom-container">
         <div className="pt-5">
           <p
@@ -107,11 +105,11 @@ const Home: React.FC = () => {
                       <span>Read More</span>
                       <span className="p-2 rounded-[50%] bg-gray-300 ">
                         <svg
-                          width="18"
-                          height="18"
-                          viewBox="0 0 18 18"
-                          fill="none"
-                          class="h-3.5 w-3.5 rotate-180"
+                          width={18}
+                          height={18}
+                          viewBox={`0 0 18 18`}
+                          fill={`none`}
+                          className="h-3.5 w-3.5 rotate-180"
                           xmlns="http://www.w3.org/2000/svg"
                         >
                           <path
