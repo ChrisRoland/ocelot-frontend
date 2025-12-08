@@ -15,7 +15,7 @@ const Home: React.FC = () => {
         {/* Three.js Background */}
         <ThreeJSBackground />
 
-        {/* Hero Content - positioned but doesn't block canvas */}
+        {/* Hero Content */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
