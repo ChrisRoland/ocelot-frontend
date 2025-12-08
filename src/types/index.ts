@@ -1,4 +1,4 @@
-import type { ElementType, JSX } from "react";
+// import type { ElementType, JSX } from "react";
 
 export type StepProps = {
     id: string;

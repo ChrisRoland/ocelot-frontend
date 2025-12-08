@@ -4,14 +4,13 @@ import Footer from "./Footer";
 import ContactUsInfo from "./ContactUsInfo";
 import { steps } from "../utils";
 // import HeaderContainer from './HeaderContainer';
-// import SpinningBackground from './SpinningBackground';
 import { ThreeJSBackground } from "./ThreeJSBackground";
 
 const Home: React.FC = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-black relative w-full h-screen overflow-hidden">
+      <section className="bg-black relative w-full h-screen overflow-hidden  ">
         {/* Three.js Background */}
         <ThreeJSBackground />
 
@@ -20,10 +19,10 @@ const Home: React.FC = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.5, ease: "easeOut" }}
-          className="absolute top-1/2 left-6 lg:left-20 -translate-y-1/2 flex flex-col gap-5 p-10"
-          style={{ zIndex: 10, maxWidth: "calc(100% - 3rem)" }}
+          className="absolute top-80 md:top-1/2 left-6 lg:left-4   -translate-y-1/2 flex flex-col gap-5 p-10 custom-container"
+          style={{ zIndex: 8, maxWidth: "calc(100% - 3rem)" }}
         >
-          <h1 className="text-xl lg:text-[88px] leading-[92px] font-bold text-white font-primary">
+          <h1 className="text-xl lg:text-[42px] leading-[45px] font-bold text-white font-primary">
             Transforming bold ideas into{" "}
             <span className="main-gradient font-Montserrat">
               breakthrough solutions
@@ -60,7 +59,6 @@ const Home: React.FC = () => {
         </motion.div>
       </section>
 
-      {/* <SpinningBackground /> */}
       <section className="flex justify-center items-center custom-container">
         <div className="pt-5">
           <p
@@ -73,7 +71,7 @@ const Home: React.FC = () => {
           </p>
 
           <div className="grid grid-cols-1 lg:grid-cols-7 gap-10 mt-5">
-            <div className="h-full w-100 lg:w-full lg:col-span-3">
+            <div className="h-full lg:w-full lg:col-span-3">
               <img
                 className="rounded-2xl"
                 src="https://ocelotgroup.org/_next/static/media/1537.a3a7716b.jpg"
@@ -107,11 +105,11 @@ const Home: React.FC = () => {
                       <span>Read More</span>
                       <span className="p-2 rounded-[50%] bg-gray-300 ">
                         <svg
-                          width="18"
-                          height="18"
-                          viewBox="0 0 18 18"
-                          fill="none"
-                          class="h-3.5 w-3.5 rotate-180"
+                          width={18}
+                          height={18}
+                          viewBox={`0 0 18 18`}
+                          fill={`none`}
+                          className="h-3.5 w-3.5 rotate-180"
                           xmlns="http://www.w3.org/2000/svg"
                         >
                           <path
@@ -141,11 +139,11 @@ const Home: React.FC = () => {
                       <span>Read More</span>
                       <span className="p-2 rounded-[50%] bg-gray-300 ">
                         <svg
-                          width="18"
-                          height="18"
-                          viewBox="0 0 18 18"
-                          fill="none"
-                          class="h-3.5 w-3.5 rotate-180"
+                          width={18}
+                          height={18}
+                          viewBox={`0 0 18 18`}
+                          fill={`none`}
+                          className="h-3.5 w-3.5 rotate-180"
                           xmlns="http://www.w3.org/2000/svg"
                         >
                           <path
@@ -171,12 +169,12 @@ const Home: React.FC = () => {
           <div className="flex gap-2 items-center">
             <span>
               <svg
-                width="14"
-                height="14"
-                viewBox="0 0 14 14"
-                fill="currentColor"
+                width={`14`}
+                height={`14`}
+                viewBox={`0 0 14 14`}
+                fill={`currentColor`}
                 xmlns="http://www.w3.org/2000/svg"
-                class="text-white"
+                className="text-white"
               >
                 <circle cx="7" cy="7" r="7" fill="currentColor"></circle>
               </svg>
@@ -213,7 +211,7 @@ const Home: React.FC = () => {
             ))}
           </div>
 
-          <div className="mt-10 w-[100] lg:w-full">
+          <div className="mt-10 w-full">
             <img
               className="w-full rounded-2xl"
               src="https://ocelotgroup.org/_next/static/media/planning.1b97172c.jpg"

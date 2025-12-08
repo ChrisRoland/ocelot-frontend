@@ -56,7 +56,7 @@ export function ThreeJSBackground({
     controls.autoRotateSpeed = 1.5;
     controls.target.set(0, 0.5, 0);
     controls.minPolarAngle = 0;
-    controls.maxPolarAngle = Math.PI / 2;
+    controls.maxPolarAngle = Math.PI / 2; // Limit vertical rotation to prevent going below ground
 
     // Add event listener to verify controls are working
     renderer.domElement.style.cursor = "grab";
